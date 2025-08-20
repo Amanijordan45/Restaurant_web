@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    transition: all 0.5s linear;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+body{
+    background-color: #1A1110;
+    font-family: 'poppins',sans-serif;
+}
+header{
+    position: relative;
+    padding: 2rem 0 ;
+    background-image: linear-gradient( rgba(0, 0, 0, 0 ), rgba(0,0, 0, 0.3)), url(menu-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    flex: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+    margin-top: 1%;
+}
+
+.navabar .scrollind{
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 35px;
+}
+
+.navabar{
+    width: 100%;
+    padding: 2rem 3rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    
+}
+.nav_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+
+.nav_items li{
+    list-style: none;
+    padding: 1em;
+}
+
+
+.nav_items li a{
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.nav_items li::before{
+    content: '';
+    width: 0;
+  height: 2px;
+  background-color: green;
+  display: flex;
+  margin: auto;
+  transition: 0.5s;
+
+}
+
+
+.nav_items li:hover::before{
+    width: 100%;
+}
+
+.btn{
+    padding: 9px 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: rgb(0, 128, 0);
+    border: 2px solid green;
+}
+
+.main{
+    width: 80%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+}
+
+.heading_1{
+    font-size: 2.3rem;
+}
+
+
+.heading{
+font-size: 3.5rem;
+padding: 1.5% 0;
+font-family: "playwrite cu", cursive;
+}
+
+.main_btn{
+    display: flex;
+}
+
+.btn:hover{
+    background-color: transparent;
+}
+.btn2{
+    background-color: transparent;
+    margin-left: 1%;
+    align-items: center;
+    display: flex;
+}
+
+.btn2 i{
+    font-size: 2rem;
+    margin-right: 6px;
+    color: green;
+}
+
+.btn2:hover{
+    background-color:green ;
+}
+.btn2:hover{
+color: #fff;
+}
+
+/*------------------services---------------------------*/
+.src{
+    padding: 8% 0 3% 0;
+    width: 85%;
+    margin: auto;
+}
+
+.head{
+    text-align: center;
+}
+.heading span{
+    color: green;
+}
+
+.head .heading{
+    font-family: 'lato', sans-serif ;
+}
+.head .heading_1{
+    font-family: 'playwrite cu', cursive;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.boxes{
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box{
+    text-align: center;
+    padding: 5% 0 ;
+    box-shadow: rgba(0, 0, 0, 1.35) 0 5px 15px;
+    border: 2px solid transparent;
+}
+.box img{
+    width: 150px;
+}
+
+.box p{
+    max-width: 275px;
+    margin-inline: auto;
+    text-align: center;
+    line-height: 1.75rem;
+    color: #888;
+}
+
+.box h4{
+    margin: 1rem;
+    font-size: 1.7rem;
+    font-weight:700 ;
+}
+
+.box:hover{
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 10px ;
+}
+/*----------------about---------------------------*/
+.about_heading{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6em;
+    align-items: center;
+}
+
+.about .heading_1, 
+.about .heading{
+  grid-column: 1;
+}
+.heading_1{
+    text-align: center;
+}
+
+.about .para{
+    grid-column: 2;
+    text-align: right;
+}
+
+
+.about_all{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin-top: 5%;
+}
+
+.para{
+    color: #888;
+    padding-bottom: 5%;
+}
+.box1{
+    background-color: #ffeedc;
+    box-shadow: rgba(0, 0, 2.24 ) 0 3px 8px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.box1 img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.box_text{
+    padding: 4%;
+}
+
+.box_text button:hover{
+    color: #000;
+}
+
+.jordan1{
+    height: 300px;
+}
+
+/*---------------contact------------*/
+ .contact{
+    margin-top: 6%;
+    width: 100%;
+    background-color: #312c2a;
+ }
+
+ .contact_box{
+    display: grid;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+ }
+
+ .left_box .heading_1{
+    color: green;
+ }
+
+ .right_box{
+    text-align: right;
+ }
+
+ .right_box img{
+    width: 100%;
+ }
+
+
+ /*----------footer----------*/
+  .footer_container{
+    display: grid;
+    gap: 4rem 3rem;
+    grid-template-columns: repeat(4 , 1fr);
+
+  }
+
+  .footer_logo img{
+    max-width: 40px;
+  }
+
+  .footer_logo span{
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+
+  .footer-col .footer_text{
+    max-width: 350px;
+    color: #999;
+    margin: 2rem 0;
+  }
+
+  .footer_text{
+font-family: 'playwrite cu', cursive;
+  }
+
+  .footer_secials .imgok{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap:1.5rem ;
+    list-style: none;
+    text-decoration: none;
+
+  }
+  li{
+    list-style: none;
+  }
+  .footer_secials a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 3%;
+  }
+
+  .footer_secials a:hover{
+    background-color: green;
+  }
+
+  .footer_col h4{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .footer_links{
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  .footer_links a {
+    text-decoration: none;
+    color: #999;
+  }
+
+  .footer_links a:hover{
+    color: green;
+  }
+
+  .footer_bar{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+/*-----------------scroll---------------*/
+
+
+@media  only  screen and (max-width:1050px) {
+    .about_heading{
+        gap: 0 2rem
+    }
+      .about_box .boxes{
+        gap: 1rem;
+      }
+      .box1_text  .btn{
+        padding: 9px;
+        font-size:15px ;
+
+      }
+
+     .left_box .heading{
+      font-size: 2.5rem;
+     }
+}
+
+@media  only  screen and (max-width:1050px) {
+  .nav_items{
+    position:absolute ;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    padding: 5rem 0em 2em 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.9rem;
+    background-color: #000;
+    transition: 0.3s;
+    z-index: -1;
+    transform: translateY();
+  }
+}
